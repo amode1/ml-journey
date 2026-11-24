@@ -1,4 +1,5 @@
-def maximumWealth(self, accounts: list[list[int]]) -> int:
+class Solution:
+    def maximumWealth(self, accounts: list[list[int]]) -> int:
         wealth = []
         for row in accounts:
             wealth.append(sum(row))
