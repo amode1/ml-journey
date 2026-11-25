@@ -17,18 +17,11 @@ def max3(a, b, c):
 
 # 4. Вернуть сумму чисел от 1 до n включительно (циклом)
 def sum_to(n):
-    summator = 0
-    for i in range(n + 1):
-        summator += i
-    return summator
+    return sum(i for i in range(n + 1))
 
 # 5. Вернуть количество гласных (aeiou) в строке s (строчные буквы)
 def count_vowels(s):
-    counter = 0
-    for i in s:
-        if i in ['a','e','i','o','u']:
-            counter += 1
-    return counter
+    return sum(1 for i in s if i in 'aeiou')
 
 # 6. Вернуть строку задом наперёд
 def reverse(s):

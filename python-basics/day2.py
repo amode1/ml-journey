@@ -1,12 +1,6 @@
 # 1. Вернуть список без дубликатов, СОХРАНИВ порядок первого появления
 def unique_keep_order(nums):
-    seen = set()
-    uniq = []
-    for x in nums:
-        if x not in seen:
-            seen.add(x)
-            uniq.append(x)
-    return uniq
+    return list(dict.fromkeys(nums))
 
 # 2. Вернуть True, если строка — палиндром (без учёта регистра и пробелов)
 def is_palindrome(s):
